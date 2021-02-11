@@ -15,6 +15,8 @@ object E2_Divisores {
   }
 
   def main(args: Array[String]): Unit = {
+    var valor = 20
+    println("Los divisores de " + valor + " son:")
     Dividores(20)
   }
 }
