@@ -6,7 +6,7 @@ object E3_Factorial {
   }
 
   def main(args: Array[String]): Unit = {
-    var valor = 20
+    val valor = 20
     println("Factorial de " + valor + " es:")
     println(Factorial(valor))
   }

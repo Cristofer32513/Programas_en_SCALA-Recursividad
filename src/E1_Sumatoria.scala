@@ -10,7 +10,7 @@ object E1_Sumatoria {
   }
 
   def main(args: Array[String]): Unit = {
-    var valor = 20
+    val valor = 20
     println("La sumatoria de " + valor + " es:")
     println(Sumatoria(20))
   }
