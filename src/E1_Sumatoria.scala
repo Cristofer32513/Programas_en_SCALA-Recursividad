@@ -1,17 +1,13 @@
 object E1_Sumatoria {
 
-  def Sumatoria(de:Int) : Int = {
-    CalcularSumatoria(1, de)
-  }
-
-  def CalcularSumatoria(desde:Int, hasta:Int) : Int = {
-    if (desde < hasta) desde + CalcularSumatoria(desde + 1, hasta)
-    else desde
+  def CalcularSumatoria(de:Int) : Int = {
+    if (de > 1) de + CalcularSumatoria(de - 1)
+    else de
   }
 
   def main(args: Array[String]): Unit = {
     val valor = 20
     println("La sumatoria de " + valor + " es:")
-    println(Sumatoria(valor))
+    println(CalcularSumatoria(valor))
   }
 }
